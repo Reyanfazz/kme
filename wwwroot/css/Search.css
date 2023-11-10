@@ -1,0 +1,77 @@
+﻿/* search style css*/
+header {
+    background-color: black;
+    padding: 20px;
+    position: relative;
+}
+
+.search-bar {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 500px;
+}
+
+.search-icon {
+    font-size: 20px; /* Adjust the size as needed */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
+
+
+
+.box1 {
+    background-color: #f2f2f2;
+    color: #2c2c2c;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    background: #e0e0e0;
+    display: flex;
+    justify-items: first baseline;
+}
+/* Base styles for the container */
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .box-container {
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+}
+
+/* box-con*/
+.box-container {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box-title {
+    margin-top: 5rem;
+    text-align: center;
+    color: antiquewhite;
+}

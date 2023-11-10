@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication7</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/SignUp.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Search.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication7.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="hcon container-fluid">
+            <!-- Added container-fluid for full-width content -->
+            <div class="row">
+
+                <div class="col-md-7 text-right">
+                    <div class="image-container">
+
+                        <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="back" class="side-by-side">
+
+                        <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="front" class="side-by-side">
+
+                        <div class="btn">
+                            <button type="button">Signup</button>
+                            <button type="button" class="btn2">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidenav">
+            <a href="#"><i class="fa fa-book"></i> KME</a>
+            <i class="fa fa-home">@Html.ActionLink("Home", "Index")</i>
+            <i class="fa fa-search">@Html.ActionLink("Search", "Search")</i>
+            <i class="fa fa-dropbox">@Html.ActionLink("Topic", "Topic")</i>
+        </aside>
+        <aside class="sidena">
+            <a href="#"><i class="fa fa-address-book"></i> your library</a>
+
+        </aside>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="foot">
+        <div class="ecommerce-footer-section pt-5 pb-5">
+            <div class="fcontainer">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="text-center text-md-left">
+                            <img src="~/src/img/logo.png" class="ecommerce-logo" alt="Ecommerce Logo" />
+                            <div class="d-flex flex-row justify-content-center justify-content-md-start mt-3 mb-3">
+                                <div class="ecommerce-footer-section-icon-container">
+                                    <i class="fa fa-google icon"></i>
+                                </div>
+                                <div class="ecommerce-footer-section-icon-container">
+                                    <i class="fa fa-twitter icon"></i>
+                                </div>
+                                <div class="ecommerce-footer-section-icon-container">
+                                    <i class="fa fa-instagram icon"></i>
+                                </div>
+                                <div class="ecommerce-footer-section-icon-container">
+                                    <i class="fa fa-linkedin icon"></i>
+                                </div>
+                            </div>
+                            <p class="ecommerce-footer-section-address">
+                                37, Ayur Vigyan Nagar, New Delhi, India.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h2 class="ecommerce-footer-section-heading mb-3">Get to know us</h2>
+                        <ul class="ecommerce-footer-section-list">
+                            <li class="ecommerce-footer-section-list-item">About us</li>
+                            <li class="ecommerce-footer-section-list-item">Career</li>
+                            <li class="ecommerce-footer-section-list-item">Press Releases</li>
+                            <li class="ecommerce-footer-section-list-item">Gift a smile</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h2 class="ecommerce-footer-section-heading mb-3">Contact with Us</h2>
+                        <ul class="ecommerce-footer-section-list">
+                            <li class="ecommerce-footer-section-list-item">Facebook</li>
+                            <li class="ecommerce-footer-section-list-item">Twitter</li>
+                            <li class="ecommerce-footer-section-list-item">Instagram</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h2 class="ecommerce-footer-section-heading mb-3">
+                            Let Us Help You
+                        </h2>
+                        <ul class="ecommerce-footer-section-list">
+                            <li class="ecommerce-footer-section-list-item">
+                                100% Purchase Protection
+                            </li>
+                            <li class="ecommerce-footer-section-list-item">Your Account</li>
+                            <li class="ecommerce-footer-section-list-item">Return Centre</li>
+                            <li class="ecommerce-footer-section-list-item">Help</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="hr-line" />
+                <div class="text-center">
+                    <i class="fa fa-copyright icon" aria-hidden="true"></i>
+                    <span class="ecommerce-footer-section-copyright">
+                        2023 by team Tri.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
