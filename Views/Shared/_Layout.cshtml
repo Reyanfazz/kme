@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - WebApplication7</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/SignUp.css" asp-append-version="true" />
@@ -25,8 +26,9 @@
                 </div>
                 <div class="btn text-left">
                     <!-- Changed to text-left -->
-                    <button type="button" onclick="window.location.href='E:\kme\EME1-main\EME-main\EME\register.html'">Signup</button>
-                    <button type="button" class="btn2">Login</button>
+                   
+                    <button type="button">@Html.ActionLink("SignUp", "SignUp")</button>
+                    <button type="button">@Html.ActionLink("Login", "Login")</button>
                 </div>
             </div>
         </div>
@@ -37,7 +39,6 @@
             <a href="#"><i class="fa fa-book"></i> KME</a>
             <i class="fa fa-home">@Html.ActionLink("Home", "Index")</i>
             <i class="fa fa-search">@Html.ActionLink("Search", "Search")</i>
-            <i class="fa fa-search">@Html.ActionLink("Login", "Login")</i>
             <i class="fa fa-dropbox">@Html.ActionLink("Topic", "Topic")</i>
              <i class="fa fa-dropbox">@Html.ActionLink("Admin","AdminPage")</i>
         </aside>

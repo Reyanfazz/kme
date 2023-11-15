@@ -48,7 +48,7 @@ header {
 }
 
 /* Style for the buttons in the header */
-header button {
+button {
     flex: content;
     flex: 1 0 40px;
     transition: all 0.3s ease;
@@ -63,12 +63,15 @@ header button {
     color: white;
     margin: 0 3px;
 }
-
+a{
+    color:white;
+}
 button:hover {
     transform: scale(0.9);
     color: white;
     background-color: rgb(39, 39, 239);
 }
+
 
 .btn {
     flex: 1 0 40px;
@@ -88,7 +91,7 @@ button:hover {
     height: 80%;
     position: fixed;
     z-index: 1;
-    top: 11rem;
+    top: 13.5rem;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
