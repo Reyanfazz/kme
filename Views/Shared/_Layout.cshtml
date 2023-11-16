@@ -20,24 +20,19 @@
     <header class="sticky-top">
         <div class="hcon container-fluid">
             <!-- Added container-fluid for full-width content -->
-
             <div class="header-content">
                 <div class="image-container">
                     <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="back" class="side-by-side">
                     <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="front" class="side-by-side">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
                 </div>
-                    <div class="btn text-left collapse navbar-collapse" id="navbarNav">
-                            <!-- Changed to text-left -->
+                <div class="btn text-left">
+                    <!-- Changed to text-left -->
 
-                            <button type="button">@Html.ActionLink("SignUp", "SignUp")</button>
-                            <button type="button">@Html.ActionLink("Login", "Login")</button>
-                        </div>
-
+                    <button type="button">@Html.ActionLink("SignUp", "SignUp")</button>
+                    <button type="button">@Html.ActionLink("Login", "Login")</button>
+                </div>
             </div>
-       
+        </div>
     </header>
 
     <div class="container">
