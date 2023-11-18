@@ -1,7 +1,16 @@
+using kme.Data;
+using Microsoft.Build.Framework;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ApplicationDbContext>(opction =>
+opction.UseSqlServer(builder.Configuration.GetConnectionString("KUsers")));
+
+
 
 var app = builder.Build();
 
